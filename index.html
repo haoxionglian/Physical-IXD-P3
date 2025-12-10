@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sci-Fi Anime Tracks</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+  <!-- 动态动漫壁纸 -->
+  <video id="bg-video" autoplay muted loop>
+    <source src="https://cdn.live2d.com/wallpaper/2021/0817/anime-matrix.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <header>
+    <h1>ANIME TRACKS</h1>
+    <p class="sub">Sci-Fi OP / ED Explorer</p>
+  </header>
+
+  <div class="search-bar">
+    <input id="searchInput" placeholder="Search Anime (e.g. Naruto)" type="text">
+    <button onclick="searchAnime()">Search</button>
+  </div>
+
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
